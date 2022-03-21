@@ -16,6 +16,11 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
+      {
+        rel: 'stylesheet',
+        type: 'text/css',
+        href: 'https://fonts.googleapis.com/css?family=Quicksand&display=swap',
+      },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
