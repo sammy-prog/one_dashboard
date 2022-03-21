@@ -1,18 +1,18 @@
 <template>
   <v-app>
     <v-app-bar
-      color="transparent"
+      color="white"
       dense
       app
       height="70"
       elevation="0"
       style="border-bottom: 1px solid #D3D0D3 !important;"
     >
-    <v-row class="align-center justify-space-between">
-      <v-col class="mr-15">
+    <v-row class="align-center justify-space-between px-8">
+      <div>
         <v-btn dark color="#4854EE" class="no-uppercase"><v-icon class="mr-2">mdi-plus-circle</v-icon>New Stream</v-btn>
-      </v-col>
-      <v-col class="mx-5 d-none d-md-block">
+      </div>
+      <div class="d-none d-md-block">
         <div class="d-flex" style="margin-top:20px">
           <nuxt-link style="text-decoration: none !important" to="/Schedules"><v-icon class="mx-4">mdi-calendar-month-outline</v-icon></nuxt-link> 
           <nuxt-link style="text-decoration: none !important" to="/Videos"><v-icon class="mx-4">mdi-play-circle-outline</v-icon></nuxt-link>
@@ -44,18 +44,18 @@
           </v-menu>
           
         </div>  
-      </v-col>
-      <v-col class="ml-12 d-none d-md-flex ">
-        <v-menu transition="scale-transition" bottom min-width="250px">
+      </div>
+      <div class="d-none d-md-flex ">
+        <v-menu transition="scale-transition" bottom min-width="220px">
           <template v-slot:activator="{ on }">
             <v-flex icon v-on="on">
-              <div style="cursor: pointer"  class="d-flex">
+              <div style="cursor: pointer" class="d-flex">
                 <v-avatar size="48px">
                   <img
                     alt="Avatar"
                     src="/Behance-Profile-pic 1.png">
                   </v-avatar>
-                <p class="mt-4">Samuel LB</p>
+                <p class="mt-4 ml-2">Samuel LB</p>
                 <v-icon>mdi-chevron-down</v-icon>
               </div>
             </v-flex>
@@ -75,7 +75,7 @@
           </v-card>
         </v-menu>
 
-      </v-col>
+      </div>
       
       <v-spacer class="sm6 d-sm-none" ></v-spacer>
       <v-app-bar-nav-icon class="sm6 d-sm-none" @click="drawer = true"></v-app-bar-nav-icon>
@@ -253,6 +253,9 @@ export default {
 * {
   font-family: 'Quicksand', sans-serif;
 }
+body{
+  overflow: hidden;
+}
 .line {
   height: 1px;
   margin-top: 10px;
@@ -305,6 +308,6 @@ hr.horizontal__line {
 }
 
 hr.horizontal__line, hr.horizontal__line:before {
-    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.4) 0%,rgba(0, 0, 0, 0) 75%);
+    background: radial-gradient(ellipse at center, rgba(72, 84, 238, 0.4) 0%,rgb(255, 255, 255) 75%);
 }
 </style>
