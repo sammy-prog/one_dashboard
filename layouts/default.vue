@@ -165,7 +165,7 @@
         </v-list-item>
         <div class="mt-3 line"></div>
 
-        <p class="mt-4 ml-5">Refferal / Affiliate</p>
+        <!-- <p class="mt-4 ml-5">Refferal / Affiliate</p>
         <v-list-item active-class="sidenav__link" class="mt-2" to="/Affiliate">
           <v-list-item-action>
             <v-icon>mdi-currency-usd</v-icon>
@@ -174,9 +174,9 @@
             <v-list-item-title>Affiliate Program</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <div class="mt-3 line"></div>
+        <div class="mt-3 line"></div> -->
 
-        <p class="mt-4 ml-5">Help</p>
+        <!-- <p class="mt-4 ml-5">Help</p>
         <v-list-item active-class="sidenav__link" class="mt-2" to="/Faq">
           <v-list-item-action>
             <v-icon>mdi-frequently-asked-questions</v-icon>
@@ -184,25 +184,13 @@
           <v-list-item-content>
             <v-list-item-title>FAQ’s</v-list-item-title>
           </v-list-item-content>
-        </v-list-item>
-        <v-list-item active-class="sidenav__link" class="mt-2" to="/Contact">
-          <v-list-item-action>
-            <v-icon>mdi-phone-outline</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Contact Us</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-       
+        </v-list-item> -->
       </v-list>
       
     </v-navigation-drawer>
     <v-main light>
         <Nuxt />
     </v-main>
-    <!-- <v-footer fixed="false" class="align-self-center" app>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer> -->
   </v-app>
 </template>
 
@@ -255,6 +243,9 @@ export default {
 }
 body{
   overflow: hidden;
+}
+.v-application {
+  background-color: #F4F5F8 !important;
 }
 .line {
   height: 1px;
