@@ -40,7 +40,7 @@
             <v-btn dark color="#4854EE" class="text-none mt-5">Upgrade to Activate</v-btn>
         </v-col>
         <v-col style="color:#444951" cols="12" md="4">
-            <div style="margin" class="d-flex mt-10">
+            <div class="d-flex mt-10">
                 <v-progress-circular :size="120" :width="15" :value="73" color="#FEA74C">73%</v-progress-circular>
                 <div class="ml-4 mt-7">
                     <p>Personal storage</p>
